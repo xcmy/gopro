@@ -179,6 +179,25 @@ func main()  {
 
 然后使用```dep ensure```安装
 
+运行`main.go`
+
+```
+~/desktop/golang/src/gopro/main(master*) » go run main.go       
+hello
+db connected successful
+[GIN-debug] GET   /                         --> main.main.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :3000
+```
+👆可以看出数据库连接成功，并监听本机`3000`端口，访问浏览器`http://localhost:3000/`，浏览器返回`hello world`.
+
+终端输出
+```
+[GIN] 2017/12/22 - 14:38:31 | 200 |    381.242µs | [::1]:60164 |   GET     /
+```
+
+
+
+
 
 
 
